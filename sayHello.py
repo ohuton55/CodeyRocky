@@ -1,3 +1,5 @@
+# Test to moving with putty.
+
 import codey, time, rocky, event
 
 @event.start
