@@ -2,6 +2,7 @@
 # codes make you happy
 import codey, event, time, uos
 import urequests as requests
+import utime
 
 class Setting():
     def __init__(self):
@@ -20,7 +21,8 @@ class Moving(Setting):
     def on_button_a_pressed():
         codey.speaker.play_melody('hello.wav')
         codey.display.show_image("00003c7e7e3c000000003c7e7e3c0000") 
-        codey.display.show('12/26 5:55', wait = True)
+        #codey.display.show('12/26 5:55', wait = True)
+        codey.display.show(utime.localtime(), wait = True)
 
     @event.button_b_pressed
     def on_button_b_pressed1():
